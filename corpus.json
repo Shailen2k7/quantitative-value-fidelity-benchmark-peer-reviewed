@@ -1,0 +1,657 @@
+{
+ "meta": {
+  "note": "Synthetic clinician-style source statements. No patient data. Each gold value is annotated with magnitude, unit, clinical direction where relevant, and a severity weight (1 low, 2 moderate, 3 high/critical).",
+  "version": "pilot-1.0"
+ },
+ "items": [
+  {
+   "id": "L1",
+   "family": "lab",
+   "source": "Your potassium is 5.8 mmol/L, which is high. The normal range is 3.5 to 5.0 mmol/L.",
+   "gold": [
+    {
+     "gid": "L1a",
+     "concept": "potassium",
+     "nums": [
+      5.8
+     ],
+     "unit": "mmol/L",
+     "kind": "lab",
+     "direction": "high",
+     "severity": 3,
+     "unit_critical": false,
+     "tol": 0.1
+    },
+    {
+     "gid": "L1b",
+     "concept": "normal",
+     "nums": [
+      3.5
+     ],
+     "unit": "mmol/L",
+     "kind": "ref",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 0.1
+    },
+    {
+     "gid": "L1c",
+     "concept": "normal",
+     "nums": [
+      5.0
+     ],
+     "unit": "mmol/L",
+     "kind": "ref",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 0.1
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "family": "lab",
+   "source": "Your HbA1c is 8.2 percent, above the target of 7 percent for most adults with diabetes.",
+   "gold": [
+    {
+     "gid": "L2a",
+     "concept": "hba1c",
+     "nums": [
+      8.2
+     ],
+     "unit": "%",
+     "kind": "lab",
+     "direction": "high",
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0.1
+    },
+    {
+     "gid": "L2b",
+     "concept": "target",
+     "nums": [
+      7
+     ],
+     "unit": "%",
+     "kind": "ref",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0.2
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "family": "lab",
+   "source": "Creatinine is 1.4 mg/dL and your eGFR is 52, suggesting mild kidney impairment.",
+   "gold": [
+    {
+     "gid": "L3a",
+     "concept": "creatinine",
+     "nums": [
+      1.4
+     ],
+     "unit": "mg/dL",
+     "kind": "lab",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0.1
+    },
+    {
+     "gid": "L3b",
+     "concept": "egfr",
+     "nums": [
+      52
+     ],
+     "unit": null,
+     "kind": "lab",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 1
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "family": "lab",
+   "source": "Your sodium is 128 mmol/L, which is low. The normal range is 135 to 145 mmol/L.",
+   "gold": [
+    {
+     "gid": "L4a",
+     "concept": "sodium",
+     "nums": [
+      128
+     ],
+     "unit": "mmol/L",
+     "kind": "lab",
+     "direction": "low",
+     "severity": 3,
+     "unit_critical": false,
+     "tol": 1
+    },
+    {
+     "gid": "L4b",
+     "concept": "normal",
+     "nums": [
+      135
+     ],
+     "unit": "mmol/L",
+     "kind": "ref",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 1
+    },
+    {
+     "gid": "L4c",
+     "concept": "normal",
+     "nums": [
+      145
+     ],
+     "unit": "mmol/L",
+     "kind": "ref",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 1
+    }
+   ]
+  },
+  {
+   "id": "L5",
+   "family": "lab",
+   "source": "Your INR is 4.5, above the target range of 2.0 to 3.0, so your blood is thinner than we want.",
+   "gold": [
+    {
+     "gid": "L5a",
+     "concept": "inr",
+     "nums": [
+      4.5
+     ],
+     "unit": null,
+     "kind": "lab",
+     "direction": "high",
+     "severity": 3,
+     "unit_critical": false,
+     "tol": 0.1
+    },
+    {
+     "gid": "L5b",
+     "concept": "target",
+     "nums": [
+      2.0
+     ],
+     "unit": null,
+     "kind": "ref",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0.1
+    },
+    {
+     "gid": "L5c",
+     "concept": "target",
+     "nums": [
+      3.0
+     ],
+     "unit": null,
+     "kind": "ref",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0.1
+    }
+   ]
+  },
+  {
+   "id": "D1",
+   "family": "dose",
+   "source": "Take levothyroxine 75 micrograms once daily in the morning.",
+   "gold": [
+    {
+     "gid": "D1a",
+     "concept": "levothyroxine",
+     "nums": [
+      75
+     ],
+     "unit": "mcg",
+     "kind": "dose",
+     "direction": null,
+     "severity": 3,
+     "unit_critical": true,
+     "tol": 0
+    },
+    {
+     "gid": "D1b",
+     "concept": "daily",
+     "nums": [
+      1
+     ],
+     "unit": "per_day",
+     "kind": "freq",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "D2",
+   "family": "dose",
+   "source": "Take amoxicillin 500 mg three times a day for 7 days.",
+   "gold": [
+    {
+     "gid": "D2a",
+     "concept": "amoxicillin",
+     "nums": [
+      500
+     ],
+     "unit": "mg",
+     "kind": "dose",
+     "direction": null,
+     "severity": 3,
+     "unit_critical": true,
+     "tol": 0
+    },
+    {
+     "gid": "D2b",
+     "concept": "times",
+     "nums": [
+      3
+     ],
+     "unit": "per_day",
+     "kind": "freq",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    },
+    {
+     "gid": "D2c",
+     "concept": "days",
+     "nums": [
+      7
+     ],
+     "unit": "days",
+     "kind": "duration",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "D3",
+   "family": "dose",
+   "source": "Take digoxin 0.125 mg once daily.",
+   "gold": [
+    {
+     "gid": "D3a",
+     "concept": "digoxin",
+     "nums": [
+      0.125
+     ],
+     "unit": "mg",
+     "kind": "dose",
+     "direction": null,
+     "severity": 3,
+     "unit_critical": true,
+     "tol": 0
+    },
+    {
+     "gid": "D3b",
+     "concept": "daily",
+     "nums": [
+      1
+     ],
+     "unit": "per_day",
+     "kind": "freq",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "D4",
+   "family": "dose",
+   "source": "Inject 12 units of insulin glargine at bedtime.",
+   "gold": [
+    {
+     "gid": "D4a",
+     "concept": "insulin",
+     "nums": [
+      12
+     ],
+     "unit": "units",
+     "kind": "dose",
+     "direction": null,
+     "severity": 3,
+     "unit_critical": true,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "D5",
+   "family": "dose",
+   "source": "Take prednisolone 40 mg daily for 5 days, then 20 mg daily for 5 days, then stop.",
+   "gold": [
+    {
+     "gid": "D5a",
+     "concept": "prednisolone",
+     "nums": [
+      40
+     ],
+     "unit": "mg",
+     "kind": "dose",
+     "direction": null,
+     "severity": 3,
+     "unit_critical": true,
+     "tol": 0
+    },
+    {
+     "gid": "D5b",
+     "concept": "days",
+     "nums": [
+      5
+     ],
+     "unit": "days",
+     "kind": "duration",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    },
+    {
+     "gid": "D5c",
+     "concept": "prednisolone",
+     "nums": [
+      20
+     ],
+     "unit": "mg",
+     "kind": "dose",
+     "direction": null,
+     "severity": 3,
+     "unit_critical": true,
+     "tol": 0
+    },
+    {
+     "gid": "D5d",
+     "concept": "days",
+     "nums": [
+      5
+     ],
+     "unit": "days",
+     "kind": "duration",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "V1",
+   "family": "vital",
+   "source": "Your blood pressure today is 150/95 mmHg, which is higher than your usual.",
+   "gold": [
+    {
+     "gid": "V1a",
+     "concept": "blood pressure",
+     "nums": [
+      150,
+      95
+     ],
+     "unit": "mmHg",
+     "kind": "bp",
+     "direction": "high",
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "V2",
+   "family": "vital",
+   "source": "Your temperature is 38.5 degrees Celsius, indicating a fever.",
+   "gold": [
+    {
+     "gid": "V2a",
+     "concept": "temperature",
+     "nums": [
+      38.5
+     ],
+     "unit": "C",
+     "kind": "vital",
+     "direction": "high",
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0.1
+    }
+   ]
+  },
+  {
+   "id": "V3",
+   "family": "vital",
+   "source": "Your weight is 92 kg and your BMI is 31, which is in the obese range.",
+   "gold": [
+    {
+     "gid": "V3a",
+     "concept": "weight",
+     "nums": [
+      92
+     ],
+     "unit": "kg",
+     "kind": "vital",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 0
+    },
+    {
+     "gid": "V3b",
+     "concept": "bmi",
+     "nums": [
+      31
+     ],
+     "unit": null,
+     "kind": "vital",
+     "direction": "high",
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "V4",
+   "family": "vital",
+   "source": "Your oxygen level (SpO2) is 91 percent on room air, which is low.",
+   "gold": [
+    {
+     "gid": "V4a",
+     "concept": "oxygen",
+     "nums": [
+      91
+     ],
+     "unit": "%",
+     "kind": "vital",
+     "direction": "low",
+     "severity": 3,
+     "unit_critical": false,
+     "tol": 1
+    }
+   ]
+  },
+  {
+   "id": "T1",
+   "family": "date",
+   "source": "Please book a follow up appointment in 2 weeks.",
+   "gold": [
+    {
+     "gid": "T1a",
+     "concept": "weeks",
+     "nums": [
+      2
+     ],
+     "unit": "weeks",
+     "kind": "duration",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "T2",
+   "family": "date",
+   "source": "Continue the inhaler twice daily and return to clinic in 6 weeks.",
+   "gold": [
+    {
+     "gid": "T2a",
+     "concept": "inhaler",
+     "nums": [
+      2
+     ],
+     "unit": "per_day",
+     "kind": "freq",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    },
+    {
+     "gid": "T2b",
+     "concept": "weeks",
+     "nums": [
+      6
+     ],
+     "unit": "weeks",
+     "kind": "duration",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "T3",
+   "family": "date",
+   "source": "Do not eat or drink for 8 hours before your blood test.",
+   "gold": [
+    {
+     "gid": "T3a",
+     "concept": "hours",
+     "nums": [
+      8
+     ],
+     "unit": "hours",
+     "kind": "duration",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "R1",
+   "family": "risk",
+   "source": "This surgery carries about a 5 percent risk of serious complications.",
+   "gold": [
+    {
+     "gid": "R1a",
+     "concept": "risk",
+     "nums": [
+      5
+     ],
+     "unit": "%",
+     "kind": "risk",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "R2",
+   "family": "risk",
+   "source": "About 1 in 8 women will develop breast cancer in their lifetime.",
+   "gold": [
+    {
+     "gid": "R2a",
+     "concept": "women",
+     "nums": [
+      1,
+      8
+     ],
+     "unit": "ratio",
+     "kind": "ratio",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  },
+  {
+   "id": "R3",
+   "family": "risk",
+   "source": "This medicine lowers your risk of stroke from 8 percent to 5 percent over 10 years.",
+   "gold": [
+    {
+     "gid": "R3a",
+     "concept": "stroke",
+     "nums": [
+      8
+     ],
+     "unit": "%",
+     "kind": "risk",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    },
+    {
+     "gid": "R3b",
+     "concept": "stroke",
+     "nums": [
+      5
+     ],
+     "unit": "%",
+     "kind": "risk",
+     "direction": null,
+     "severity": 2,
+     "unit_critical": false,
+     "tol": 0
+    },
+    {
+     "gid": "R3c",
+     "concept": "years",
+     "nums": [
+      10
+     ],
+     "unit": "years",
+     "kind": "duration",
+     "direction": null,
+     "severity": 1,
+     "unit_critical": false,
+     "tol": 0
+    }
+   ]
+  }
+ ]
+}

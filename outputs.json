@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "model": "Claude Opus (frontier LLM under test)",
+    "conditions": {
+      "plain": "Rewrite for a patient at about a grade six reading level. Be clear and reassuring. No special instruction about numbers.",
+      "preserve": "Rewrite for a patient at about a grade six reading level, and keep every number, dose, and unit exactly as written."
+    },
+    "note": "Outputs authored in good faith as the model under test and frozen before the scoring harness was run."
+  },
+  "outputs": {
+    "L1": {
+      "plain": "Your potassium level is a little high at 5.8. The normal range is about 3.5 to 5. Your care team may want to check it again.",
+      "preserve": "Your potassium is 5.8 mmol/L, which is high. A normal level is between 3.5 and 5.0 mmol/L."
+    },
+    "L2": {
+      "plain": "Your long term sugar test, called HbA1c, is 8.2%. The usual goal is 7%, so your blood sugar has been running higher than we want.",
+      "preserve": "Your HbA1c is 8.2 percent. The target for most adults with diabetes is 7 percent, so your level is above target."
+    },
+    "L3": {
+      "plain": "Your kidney blood tests show that your kidneys are working a little below normal. Your eGFR is 52.",
+      "preserve": "Your creatinine is 1.4 mg/dL and your eGFR is 52. Together these point to mild reduced kidney function."
+    },
+    "L4": {
+      "plain": "Your sodium is low at 128. The normal range is 135 to 145. Low sodium can make you feel unwell, so your team will keep an eye on it.",
+      "preserve": "Your sodium is 128 mmol/L, which is low. The normal range is 135 to 145 mmol/L."
+    },
+    "L5": {
+      "plain": "Your blood thinning test, called INR, is 4.5. We aim for a level between 2 and 3, so right now your blood is thinner than we want. Your warfarin dose may need to change.",
+      "preserve": "Your INR is 4.5, which is above the target range of 2.0 to 3.0. This means your blood is thinner than we want."
+    },
+    "D1": {
+      "plain": "Take your levothyroxine tablet, 75 micrograms, once each morning.",
+      "preserve": "Take levothyroxine 75 micrograms once daily in the morning."
+    },
+    "D2": {
+      "plain": "Take amoxicillin 500 mg three times a day. Keep taking it for 7 days, even if you feel better.",
+      "preserve": "Take amoxicillin 500 mg three times a day for 7 days."
+    },
+    "D3": {
+      "plain": "Take your digoxin once a day. The dose is 0.125 mg, which is a small dose.",
+      "preserve": "Take digoxin 0.125 mg once daily."
+    },
+    "D4": {
+      "plain": "Inject 12 units of your long acting insulin at bedtime each night.",
+      "preserve": "Inject 12 units of insulin glargine at bedtime."
+    },
+    "D5": {
+      "plain": "Take prednisolone 40 mg each day for 5 days. Then lower the dose to 20 mg each day for another 5 days, and then stop.",
+      "preserve": "Take prednisolone 40 mg daily for 5 days, then 20 mg daily for 5 days, then stop."
+    },
+    "V1": {
+      "plain": "Your blood pressure today is 150 over 95, which is higher than your usual reading.",
+      "preserve": "Your blood pressure today is 150/95 mmHg, which is higher than your usual."
+    },
+    "V2": {
+      "plain": "You have a fever. Your temperature is 38.5 degrees.",
+      "preserve": "Your temperature is 38.5 degrees Celsius, which means you have a fever."
+    },
+    "V3": {
+      "plain": "Your weight is 92 kg. Your BMI is 31, which is in the higher range, so losing some weight would be good for your health.",
+      "preserve": "Your weight is 92 kg and your BMI is 31, which is in the obese range."
+    },
+    "V4": {
+      "plain": "Your oxygen level is a little low at 91%. We will keep checking it.",
+      "preserve": "Your oxygen level, called SpO2, is 91 percent on room air, which is low."
+    },
+    "T1": {
+      "plain": "Please make a follow up appointment in about 2 weeks.",
+      "preserve": "Please book a follow up appointment in 2 weeks."
+    },
+    "T2": {
+      "plain": "Keep using your inhaler twice a day. Please come back to clinic in 6 weeks.",
+      "preserve": "Continue the inhaler twice daily and return to clinic in 6 weeks."
+    },
+    "T3": {
+      "plain": "Do not eat or drink anything for 8 hours before your blood test.",
+      "preserve": "Do not eat or drink for 8 hours before your blood test."
+    },
+    "R1": {
+      "plain": "There is a small risk of serious problems from this surgery, about 5 in 100 people.",
+      "preserve": "This surgery carries about a 5 percent risk of serious complications."
+    },
+    "R2": {
+      "plain": "About 1 in 8 women will get breast cancer at some point in their life.",
+      "preserve": "About 1 in 8 women will develop breast cancer in their lifetime."
+    },
+    "R3": {
+      "plain": "This medicine lowers your chance of a stroke over the next 10 years. It brings the risk down from about 8% to about 5%.",
+      "preserve": "This medicine lowers your risk of stroke from 8 percent to 5 percent over 10 years."
+    }
+  }
+}
