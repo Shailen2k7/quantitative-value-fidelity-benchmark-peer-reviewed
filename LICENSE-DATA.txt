@@ -1,0 +1,1 @@
+Data files (corpus.json, outputs.json, results.json, audit files) are licensed under CC-BY-4.0.
